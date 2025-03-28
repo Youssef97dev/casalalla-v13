@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BsInstagram, BsFacebook, BsPinterest } from "react-icons/bs";
+import {
+  FaWhatsappSquare,
+  FaInstagramSquare,
+  FaMailBulk,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,24 +31,21 @@ const Footer = () => {
               Lalla Takerkoust, Marrakech 40000 Morocco
             </span>
           </div>
-          <div className="w-full flex flex-row gap-3 justify-center items-center">
-            <Link
-              href="https://www.instagram.com/lesalamamarrakech/"
-              target="_blank"
-            >
-              <BsInstagram size={18} />
+          <div className="w-full text-black py-4 flex justify-center items-center text-secondary_2 gap-3">
+            <Link href="http://wa.me/212675480103" target="_blank">
+              <FaWhatsappSquare color="#ffffff" size={25} />
             </Link>
             <Link
-              href="https://www.facebook.com/lesalamamarrakech/"
+              href="https://www.instagram.com/casa.lalla.takerkoust/"
               target="_blank"
             >
-              <BsFacebook size={18} />
+              <FaInstagramSquare color="#ffffff" size={25} />
             </Link>
             <Link
-              href="https://www.pinterest.com/lesalamamarrakech/"
+              href="mailto:reservations@casalallatakerkoust.com"
               target="_blank"
             >
-              <BsPinterest size={18} />
+              <FaMailBulk color="#ffffff" size={25} />
             </Link>
           </div>
         </div>
