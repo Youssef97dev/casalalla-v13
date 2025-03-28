@@ -129,7 +129,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/daypass" onClick={() => setIsOpen(!isOpen)}>
+              <Link href="/day-pass" onClick={() => setIsOpen(!isOpen)}>
                 Day Pass
               </Link>
             </li>
