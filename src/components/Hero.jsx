@@ -7,9 +7,9 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <div id="hero" className="relative bg-background w-full h-screen">
-      <div className="w-full h-full px-2 py-2 mt-16">
+      <div className="w-full h-full px-2 py-2 mt-16 block lg:hidden">
         <video
-          className="object-cover h-[90vh] w-full block lg:hidden rounded-md"
+          className="object-cover h-[90vh] w-full  rounded-md"
           autoPlay
           loop
           muted
