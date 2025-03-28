@@ -22,7 +22,7 @@ const Loader = () => {
   return (
     <>
       {isClient ? (
-        <div className="relative flex flex-col justify-center items-center gap-2 md:gap-0">
+        <div className="relative flex flex-col justify-center items-center">
           <Navbar />
           <Hero />
           <Gallery />

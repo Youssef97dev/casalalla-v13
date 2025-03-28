@@ -7,15 +7,17 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <div id="hero" className="relative bg-background w-full h-screen">
-      <video
-        className="object-cover h-full w-full block lg:hidden"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="/hero_video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="w-full h-full px-2 py-2 mt-16">
+        <video
+          className="object-cover h-[90vh] w-full block lg:hidden rounded-md"
+          autoPlay
+          loop
+          muted
+        >
+          <source src="/hero_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <Image
         src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/irjsnwijta06o7jrx8yf"
         height={2000}
@@ -26,7 +28,7 @@ const Hero = () => {
       <div className="absolute inset-0 backdrop-brightness-75 hidden lg:block"></div>
 
       {/* Content */}
-      <div className="absolute top-64 left-3 pr-32 text-white text-[14px] font-mollyserif block md:hidden">
+      <div className="absolute top-64 left-5 pr-32 text-white text-[14px] font-mollyserif block md:hidden">
         <TypeAnimation
           sequence={[t("hero.text_1"), 3000, t("hero.text_2"), 3000]}
           wrapper="span"
