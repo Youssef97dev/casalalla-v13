@@ -41,7 +41,7 @@ const Gallery = () => {
             className="w-full h-full object-cover"
           />
           <div className="z-10 absolute inset-0 bg-[#000] h-full mix-blend-multiply opacity-35"></div>
-          <span className="absolute w-full h-full flex justify-center items-center text-4xl text-white z-20">
+          <span className="absolute w-full h-full flex justify-center items-center text-4xl text-white z-10">
             GALLERY
           </span>
         </div>
